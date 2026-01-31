@@ -1,2 +1,4 @@
 #! /bin/sh
-qrencode -o - https://cv.keve.ren -m 0 -l M -s 2 | base64 -w 0 | tee /dev/stderr | base64 -d | identify -format "\nDimensions: %wx%h\n" -
+
+qrencode -o - https://cv.jameskeveren.com -m 0 -l L -s 2 | base64 -w 0 | tee /dev/stderr | base64 -d | identify -format "\nDimensions: %wx%h\n" -
+
